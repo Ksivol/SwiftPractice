@@ -1,0 +1,9 @@
+import Foundation
+
+
+//let optional: Int? = 7 
+let optional: Int = 7
+
+//let nonOptional: Int = optional 
+let nonOptional: Int = 6 
+//let nonOptional: String = "optional"
