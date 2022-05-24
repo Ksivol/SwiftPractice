@@ -7,3 +7,15 @@ let optional: Int = 7
 //let nonOptional: Int = optional 
 let nonOptional: Int = 6 
 //let nonOptional: String = "optional"
+
+//2
+
+//var name: String? = "Test" 
+//var age: Int = nil 
+//let distance: Float = 26.7 
+//var middleName: String? = nil
+
+var name: String = "Test" 
+var age: Int = 77 
+let distance: Float = 26.7 
+var middleName: String? = nil 
