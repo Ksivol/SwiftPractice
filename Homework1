@@ -19,3 +19,8 @@ var name: String = "Test"
 var age: Int = 77 
 let distance: Float = 26.7 
 var middleName: String? = nil 
+
+//4
+ var numbers = [4, 8, 15, 16, 23, 42] 
+ numbers.remove(at:2)
+ numbers.insert(17,at:2)
