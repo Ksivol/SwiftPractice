@@ -140,4 +140,12 @@ func hello (str : String) -> (){
 
 hello(str : "Саня")
 
+//10
+
+func helloNameS (str1 : String, str2 : String) -> (){
+    print("Привет, \(str1) \(str2)")
+}
+
+helloNameS (str1 : "Василий" , str2 : "Пупкин" )
+
 
