@@ -1,6 +1,6 @@
 import Foundation
 
-
+//1
 //let optional: Int? = 7 
 let optional: Int = 7
 
@@ -98,3 +98,27 @@ dict5["CA"] = nil
  let houseAnimals: Set = ["4", "5"] 
  let farmAnimals: Set = ["1", "2", "3", "4", "5"] 
  let farmButNoHouseAnimals = farmAnimals.subtracting(houseAnimals)
+
+//7
+
+let appRatings = [    "Calendar Pro": [1, 5, 5, 4, 2, 1, 5, 4],    
+                      "The Messenger": [5, 4, 2, 5, 4, 1, 1, 2],    
+                      "Socialise": [2, 1, 2, 2, 1, 2, 4, 2] 
+]
+
+var averagerRating = [ String : Double]()
+ 
+for (nameApp, rating) in appRatings{
+    var value : Double = 0       
+    var sum : Double = 0
+    var j : Double = 0
+    for number in rating {
+    sum += Double(number)
+    j += 1
+    } 
+    value = sum / j    
+    
+    averagerRating[nameApp] = value    
+}
+print(averagerRating)
+
