@@ -122,3 +122,14 @@ for (nameApp, rating) in appRatings{
 }
 print(averageRating)
 
+//8
+
+var nameApp3 : String = ""
+for (nameApp, rating) in averageRating{
+    if rating > 3 {
+        nameApp3 += "\(nameApp) "
+    }
+}
+print(nameApp3)
+
+
