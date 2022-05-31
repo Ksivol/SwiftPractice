@@ -106,7 +106,7 @@ let appRatings = [    "Calendar Pro": [1, 5, 5, 4, 2, 1, 5, 4],
                       "Socialise": [2, 1, 2, 2, 1, 2, 4, 2] 
 ]
 
-var averagerRating = [ String : Double]()
+var averageRating = [ String : Double]()
  
 for (nameApp, rating) in appRatings{
     var value : Double = 0       
@@ -118,7 +118,7 @@ for (nameApp, rating) in appRatings{
     } 
     value = sum / j    
     
-    averagerRating[nameApp] = value    
+    averageRating[nameApp] = value    
 }
-print(averagerRating)
+print(averageRating)
 
