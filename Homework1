@@ -171,4 +171,28 @@ var closureString2 = closureString1
 
 closureString1()
 
-//
+//13
+
+
+
+
+//14
+
+let unsortedArray =  [16, 8, 15, 42, 4, 23] 
+let sortedArray = unsortedArray.sorted{
+    (arg1: Int, arg2: Int) -> Bool in
+    return arg1 > arg2
+}
+print(sortedArray)
+
+//15
+
+var sortedArray1 = [Int]()
+var unsortedArray1 =  [16, 8, 15, 42, 4, 23] 
+for i in 0 ..< unsortedArray1.count {
+    var j = 0
+    if unsortedArray1[i] > 10 {
+       sortedArray1.insert(unsortedArray1[i], at: j)
+       j += 1
+    }
+}
