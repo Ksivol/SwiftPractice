@@ -132,4 +132,12 @@ for (nameApp, rating) in averageRating{
 }
 print(nameApp3)
 
+//9
+
+func hello (str : String) -> (){
+    print("Привет, \(str)")
+}
+
+hello(str : "Саня")
+
 
