@@ -196,3 +196,13 @@ for i in 0 ..< unsortedArray1.count {
        j += 1
     }
 }
+
+//16
+
+func callClosure( closure: () -> ()){
+    closure()
+}
+
+callClosure(closure: closureString1)
+
+//17
