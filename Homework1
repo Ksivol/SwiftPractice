@@ -206,3 +206,14 @@ func callClosure( closure: () -> ()){
 callClosure(closure: closureString1)
 
 //17
+
+func helloSomeName(name: String) -> () {
+    let helloName = {
+        return print("Привет \(name)")
+    }
+    return helloName()
+}
+
+helloSomeName(name: "Паша")
+
+//18
