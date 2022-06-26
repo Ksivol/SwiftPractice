@@ -217,3 +217,16 @@ func helloSomeName(name: String) -> () {
 helloSomeName(name: "Паша")
 
 //18
+
+
+
+//19
+
+class Employee { weak var computer: Computer? } 
+class Computer { var employee: Employee? } 
+var employee: Employee? = Employee() 
+var computer: Computer? = Computer() 
+employee?.computer = computer 
+computer?.employee = employee 
+
+//20
