@@ -259,3 +259,15 @@ func animalCheck(animal: String="dog") -> Bool {
 
 //22
 
+func factorial(_ n: Int) -> Int{
+     
+    if n == 0{
+         
+        return 1
+    }
+     
+    return n * factorial(n-1)
+}
+
+//23
+
