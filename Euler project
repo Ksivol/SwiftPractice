@@ -13,3 +13,20 @@ func Euler1() -> Int{
 
 // 2
 
+func Euler2() -> Int{
+  var zero : Int = 0
+  var one : Int = 1
+  var sum : Int = 0
+  while one < 4000000{
+    let buf = zero + one
+    zero = one
+    one = buf
+    if one % 2 == 0{
+      sum += one
+    }
+  }
+  print("The sum of all even elements of the Fibonacci series that do not exceed 4,000,000 = \(sum)")
+  return sum
+}
+
+// 3
