@@ -271,3 +271,14 @@ func factorial(_ n: Int) -> Int{
 
 //23
 
+func cheakArray(numbers: Int...) -> Int{
+    var i : Int = 0
+    for number in numbers {
+        if number == 2{
+        i += 1
+        }
+    }
+    return i
+}
+
+//24
