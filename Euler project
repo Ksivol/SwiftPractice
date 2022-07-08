@@ -1,1 +1,15 @@
 // 1
+
+func Euler1() -> Int{
+    var sum : Int = 0
+    for it in 1..<1000{
+        if it % 3 == 0 || it % 5 == 0{
+            sum += it
+        }
+    }
+    print("Sum of all numbers less than 1000 divisible by 3 or 5 = \(sum)")
+    return sum
+}
+
+// 2
+
