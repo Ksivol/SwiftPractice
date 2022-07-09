@@ -63,7 +63,7 @@ let array3: [String] = []
 var array4 = [1, 2, 3] 
 print(array4[0]) 
 print(array4[2]) 
-array4[1...2] = [1]
+array4[1...2] = [1, 2]
 array4[0] = 4 
 array4.append(4) 
 
