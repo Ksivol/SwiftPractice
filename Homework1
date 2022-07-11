@@ -186,15 +186,8 @@ print(sortedArray)
 
 //15
 
-var sortedArray1 = [Int]()
 var unsortedArray1 =  [16, 8, 15, 42, 4, 23] 
-for i in 0 ..< unsortedArray1.count {
-    var j = 0
-    if unsortedArray1[i] > 10 {
-       sortedArray1.insert(unsortedArray1[i], at: j)
-       j += 1
-    }
-}
+var sortedArray1 = unsortedArray1.filter{ $0 > 10 }
 
 //16
 
