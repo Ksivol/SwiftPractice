@@ -225,22 +225,13 @@ let animals1 = ["dog", "cat", "bird", "pig"]
 let animals2 = ["turtle", "snake", "lizard", "shark"] 
 
 
-func animalCheck(animal: String="dog") -> Bool {
-    for i in animals1 {
-        if i == animal{
-            return true
-            break
-        }     
-    }
-
-    for i in animals2 {
-        if i == animal{
-            return true
-            break
-        }    
-    }
-    
-    return false
+func animalCheck(animal: String) -> Bool {
+  var check : Bool = false
+  check = animals1.contains(animal)
+  if check == false{
+    check = animals2.contains(animal)
+  }
+    return check
 }
 
 //22
