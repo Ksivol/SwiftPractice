@@ -217,7 +217,12 @@ computer?.employee = employee
 
 //20
 
-
+class Counter {    
+  var value = 0    
+  lazy var increase = {  [weak self] in
+    guard let self = self else { return }       
+    self.value += 1 } 
+}
 
 //21
 
