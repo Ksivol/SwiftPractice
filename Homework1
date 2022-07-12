@@ -250,13 +250,8 @@ func factorial(_ n: Int) -> Int{
 //23
 
 func cheakArray(numbers: Int...) -> Int{
-    var i : Int = 0
-    for number in numbers {
-        if number == 2{
-        i += 1
-        }
-    }
-    return i
+    let sum = numbers.filter{ $0 == 2 }
+    return sum.reduce( 0, + ) / 2
 }
 
 //24
