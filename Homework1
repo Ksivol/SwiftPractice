@@ -204,7 +204,13 @@ helloSomeName(name: "Паша")
 
 //18
 
-
+func callClosure( number: Int ,closure: () -> ()){
+  var i: Int = 0
+  while  i < number{
+    print(closure())
+    i += 1
+  }
+}
 
 //19
 
